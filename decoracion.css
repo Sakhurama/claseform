@@ -1,16 +1,3 @@
-
-/* BOTÓN ENVIAR EFECTO CLIC */
-
-.cambiarColor {
-  width: auto;
-  height: auto;
-  background-color: rgba(255, 255, 255, 0);
-  text-align: center;
-  line-height: 100px;
-  cursor: pointer;
-  transition: background-color 1s ease;
-}
-
 .cambiarColor:hover{
   background-color: rgb(10, 226, 82);
 }
@@ -26,13 +13,21 @@
     }
 
     .formulario-container {
-      width: 200px;
-      max-height: 400px; /* Ajusta la altura máxima según tus necesidades */
+      width: 300px; /* ajusta el ancho */
+      max-height: 200px; /* Ajusta la altura máxima según tus necesidades */
       padding: 30px;
       border: 2px solid #cccccc;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       overflow: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(30%, 50%);
+      padding: 20px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 8px;
+      text-align: left;
     }
 
     /* Estilos adicionales para el formulario, solo como ejemplo */
@@ -50,4 +45,46 @@
       padding: 8px;
       border: 1px solid #ccc;
       border-radius: 4px;
+    }
+
+    /* BOTÓN ENVIAR EFECTO CLIC */
+
+.cambiarColor {
+  width: auto;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+  transition: background-color 1s ease;
+}
+
+    /* Para darle orden al botón de enviar */
+    
+        .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20vh;
+    }
+
+    /* Para darle estilo al banner del sitio web */
+        header {
+      background-color: rgb(27, 3, 103);
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Banner sobre la imagen */
+        body {
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
     }

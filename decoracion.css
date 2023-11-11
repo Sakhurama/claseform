@@ -1,0 +1,13 @@
+.cambiarColor {
+  width: 200;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+  transition: background-color 1s ease;
+}
+
+.cambiarColor:hover{
+  background-color: rgb(10, 226, 68);
+}

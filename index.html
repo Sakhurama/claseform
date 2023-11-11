@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="decoracion.css">
 </head>
 <body>
   <header>
@@ -37,6 +38,7 @@
 <select name="" id="">
   <option value="">Bucaramanga</option>
   <option value="">Cali</option>
+  <option value="">Bogotá</option>
 </select> <br> <br>
 
 <p>AHORA CON RADIO para elegir</p> <br> <br>
@@ -49,10 +51,15 @@
 <input type="radio" id="gay" name="grupo" value="gay">
 <label for="gay">Otro</label> <br> <br>
 
-  <input type="submit" value="Enviar">
+<div>  
+  <input  class="cambiarColor"
+onmouseover="cambiarColor()"
+onmouseout="restaurarColor()" type="submit" value="Enviar">
+</div>
   <!--buenas noches-->
 
 </form> 
 
+  <script src="interaccion.js"></script>
 </body>
 </html>

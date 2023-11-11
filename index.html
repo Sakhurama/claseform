@@ -16,37 +16,48 @@
     </nav>
   </header>
 
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ipsum, facere in tenetur dolore, consequatur nostrum optio enim esse libero modi doloremque inventore vel ut fugit at sunt. Dolorem, iusto?</p>
-  
-  <form action="datos.php" method="get" autocomplete="off">
+  <main>
 
-  <input type="text" name="nombre" id="nombre" value="Daniel" placeholder="Pon tu nombre" required> <br> <br>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ipsum, facere in tenetur dolore, consequatur nostrum optio enim esse libero modi doloremque inventore vel ut fugit at sunt. Dolorem, iusto?</p> <br> <br>
 
- <input type="text" name="apellido" id="apellido" value="Romero" placeholder="Pon tu apellido" required> <br> <br>
+  <div class="formulario-container">
 
- <input type="email" name="correo" placeholder="Tu Correo" required>
+    <form action="datos.php" method="get" autocomplete="off">
 
- <input type="password" name="contraseña" id="contraseña" placeholder="Password" required> <br> <br>
+    <label for="nombre">Tus nombres:</label>
+    <input type="text" name="nombre" id="nombre" value="Daniel" placeholder="Pon tu nombre" required> 
 
- <input type="checkbox" id="checkhombre" value="checkhombre">
- <label for="checkhombre">HOMBRE</label> <br> <br>
- <input type="checkbox" name="checkwomen" id="checkwomen">
- <label for="checkwomen">FEMENINO</label> <br> <br>
+    <label for="apellido">Tus apellidos:</label>
+    <input type="text" name="apellido" id="apellido" value="Romero" placeholder="Pon tu apellido" required> 
 
- <input type="number" required> <br> <br>
+    <label for="correo">Correo Electrónico:</label>
+    <input type="email" name="correo" id="correo" placeholder="Tu Correo" required>
+
+    <label for="contraseña">Contraseña:</label>
+    <input type="password" name="contraseña" id="contraseña" placeholder="Password" required>
+
+    <label for="checkhombre">HOMBRE</label>
+    <input type="checkbox" id="checkhombre" value="checkhombre">
+    
+
+    <label for="checkwomen">FEMENINO</label>
+    <input type="checkbox" name="checkwomen" id="checkwomen">
+    
+
+    <input type="number" required> 
 
 <select name="" id="">
   <option value="">Bucaramanga</option>
   <option value="">Cali</option>
   <option value="">Bogotá</option>
-</select> <br> <br>
+</select> 
 
-<p>AHORA CON RADIO para elegir</p> <br> <br>
+<p>AHORA CON RADIO para elegir</p> 
 <input type="radio" id="masculino" name="grupo" value="masculino">
-<label for="masculino">Soy hombre</label> <br>
+<label for="masculino">Soy hombre</label>
 
 <input type="radio" id="femenino3" name="grupo" value="femenino">
-<label for="femenino">Soy mujer</label> <br>
+<label for="femenino">Soy mujer</label>
 
 <input type="radio" id="gay" name="grupo" value="gay">
 <label for="gay">Otro</label> <br> <br>
@@ -56,9 +67,12 @@
 onmouseover="cambiarColor()"
 onmouseout="restaurarColor()" type="submit" value="Enviar">
 </div>
+</div>
   <!--buenas noches-->
 
 </form> 
+
+</main>
 
   <script src="interaccion.js"></script>
 </body>
